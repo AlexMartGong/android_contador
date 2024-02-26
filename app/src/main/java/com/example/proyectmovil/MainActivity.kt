@@ -1,5 +1,10 @@
 package com.example.proyectmovil
 
+/*
+ * Author: Alex Martinez Gonzalez
+ * Date: 02/15/2024
+ */
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -18,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val btnContador = findViewById<Button>(R.id.btnCuenta)
         val btnReset = findViewById<Button>(R.id.btnReset)
 
+        //Button procedimiento que realiza el proyecto
         btnContador.setOnClickListener {
 
             if (cont != 9 && aux == 0) {
@@ -39,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-
+        //Button para resetear desde el inicio
         btnReset.setOnClickListener{
             txtConteo.text = "0"
             "Increased".also { btnContador.text = it }
